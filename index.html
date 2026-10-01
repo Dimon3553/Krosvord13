@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Кроссворд — Моделирование</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#eef2f5;margin:0;padding:14px;color:#263746}
+.box{max-width:760px;margin:auto;background:#fff;padding:20px;border-radius:16px;box-shadow:0 4px 18px #bbb}
+h1{text-align:center;color:#40566d}
+p{text-align:center}
+.grid{display:grid;grid-template-columns:repeat(13,30px);gap:2px;justify-content:center;margin:22px auto}
+.cell{width:30px;height:30px;border:1px solid #555;border-radius:3px;background:white;text-align:center;font-size:18px;padding:0;text-transform:uppercase}
+.black{width:30px;height:30px;background:#333;border-radius:2px}
+.check{display:block;width:max-content;margin:12px auto;padding:11px 22px;background:#40566d;color:white;border-radius:9px;font-weight:bold}
+.answers{margin-top:15px}
+.answers summary{cursor:pointer;text-align:center;background:#40566d;color:#fff;padding:11px;border-radius:9px;font-weight:bold;list-style:none}
+.answers ol{background:#f1f4f6;padding:18px 35px;border-radius:9px}
+li{margin:7px}
+@media(max-width:500px){
+ .grid{grid-template-columns:repeat(13,23px)}
+ .cell,.black{width:23px;height:23px}
+ .cell{font-size:14px}
+}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Кроссворд «Моделирование»</h1>
+<p>Впиши ответы по горизонтали.</p>
+
+<div class="grid">
+<input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell">
+<div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+
+<div class="black"></div><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+
+<div class="black"></div><div class="black"></div><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+
+<input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><div class="black"></div><div class="black"></div><div class="black"></div>
+
+<div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><div class="black"></div><div class="black"></div><div class="black"></div>
+
+<div class="black"></div><div class="black"></div><div class="black"></div><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><div class="black"></div><div class="black"></div><div class="black"></div><div class="black"></div>
+
+<input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell"><input class="cell">
+</div>
+
+<details class="answers">
+<summary>Проверить ответы</summary>
+<ol>
+<li><b>МОДЕЛЬ</b></li>
+<li><b>ОБЪЕКТ</b></li>
+<li><b>СИСТЕМА</b></li>
+<li><b>ИНФОРМАЦИЯ</b></li>
+<li><b>СХЕМА</b></li>
+<li><b>ГРАФИК</b></li>
+<li><b>МОДЕЛИРОВАНИЕ</b></li>
+</ol>
+</details>
+
+<h3>Вопросы</h3>
+<ol>
+<li>Упрощённое представление объекта, процесса или явления.</li>
+<li>То, что исследуют или описывают при моделировании.</li>
+<li>Совокупность взаимосвязанных элементов.</li>
+<li>Сведения об объекте, процессе или явлении.</li>
+<li>Условное изображение объекта или процесса.</li>
+<li>Один из способов представления зависимости величин.</li>
+<li>Процесс создания и исследования моделей.</li>
+</ol>
+</div>
+</body>
+</html>
